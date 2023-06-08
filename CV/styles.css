@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-image: url(https://www.globbit.com/wp-content/uploads/2016/07/lenguaje-programaci%C3%B3n-portada.jpg);
+}
+.contenedor_1{
+    min-height: 250vh;
+    width: 80%;
+    margin: 2rem auto;
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.lado_izquierdo{
+    grid-column: span 2;
+    height: 100%;
+    background-color: #0e0d0d;
+
+}
+.lado_derecho{
+    grid-column: span 5;
+    background-color: #303841;
+    height: 100%;
+}
+.contenido_izquierdo{
+    padding: 1rem 2rem;
+}
+.perfil {
+    width: 100%;
+}
+.perfil img {
+    width: 60%;
+    padding-left: 20px;
+    border-radius: 10%;
+    border-end-end-radius: 8px solid #bdc3d8;
+    
+}
+.nombre {
+    font-size: 2rem;
+    color:rgb(234, 238, 210);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.2rem 0;
+}
+.carrera{
+    font-size: 1.6rem;
+    color: rgb(179, 175, 167);
+    text-align: center;
+    
+}
+.contacto{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(202, 191, 191);
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contacto-info ul li i {
+    color:rgb(230, 227, 233) ;
+}
+.contacto-info ul li{
+    color: rgb(143, 139, 134);
+}
+
+.contenido_derecho{
+    padding: 2rem 3rem;
+}
+
+.titulos{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #22f89f;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+.para{
+    line-height: 1.6rem;
+    color: #a9b6c9;
+    font-size: 1.1rem;
+}
+
+.titulo_derecho{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #000000;
+    text-transform: uppercase;
+}
+.titulo_derecho_2{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #2D9CDB;
+    text-transform: uppercase;
+}
+
+.contenido_derecho{
+    border-left: 1px solid #ccc;
+    padding-left: 2rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+/*Media Q*/
+@media screen and (max-width:823px){
+    .titulos::after{
+        width: 40%;
+    }
+}
+@media screen and (max-width:681px){
+    .titulos::after{
+        width: 30%;
+    }
+}
+@media screen and (max-width:780px){
+    .timeline{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width:780px){
+    .lado_izquierdo{
+        grid-column: span 3;
+    }
+    .lado_derecho{
+        grid-column: span 4;
+    }
+}
+@media screen and (max-width:1200px){
+    .contenedor_1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .perfil img{
+        width: 40%;
+    }
+}
+@media screen and (max-width:700px){
+    .perfil img{
+        width: 60%;
+    }
+}
+@media screen and (max-width:390px){
+    .nombre{
+        font-size: 1.5rem;
+    }
+}
